@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Usuario</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css'>
+</head>
+<body>
+    <div class="conteiner">  
+        <img src="img/logo2.png" alt="Logo" class="logo">
+
+        <!--formulario (divisão dentro de conteiner)-->
+        <form class="formulario">
+             <!--input de email-->
+            <div class="input-box-email">
+                <input type="text" id="email" placeholder="Email" required>
+                <i class='bx bxs-user'></i>
+            </div>
+           <!--input de senha-->
+            <div class="senha">
+                <div class="input-box-senha">
+                    <input type="password" id="password" placeholder="Senha" class="inputUser" required>
+                    <i class="bi bi-eye-slash-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+                </div>
+                        
+                <div class="lembrar">
+                    <label><input type="checkbox"> Lembre-me</label>
+                    <a href="recuperar.html" class="click">Esqueceu senha?</a>
+                </div>
+            </div>         
+
+            <button type="button" class="btn" onclick="login()">Login</button>
+            <div id="error-message" style="color: red; margin-top: 10px;"></div>
+                    
+            <div>
+                <p class="login-formulario">Não Tenho uma Conta <a href="cadastro.html" class="click">Cadastrar</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
